@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1C2532FF2354724700CE6CE2 /* FrameworkSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2532FD2354724700CE6CE2 /* FrameworkSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C2533072354740100CE6CE2 /* MySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2533052354740100CE6CE2 /* MySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C2533082354740100CE6CE2 /* MySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2533062354740100CE6CE2 /* MySDK.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2532FA2354724700CE6CE2 /* FrameworkSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2532FD2354724700CE6CE2 /* FrameworkSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkSDK.h; sourceTree = "<group>"; };
 		1C2532FE2354724700CE6CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C2533052354740100CE6CE2 /* MySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDK.h; sourceTree = "<group>"; };
+		1C2533062354740100CE6CE2 /* MySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDK.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				1C2532FD2354724700CE6CE2 /* FrameworkSDK.h */,
 				1C2532FE2354724700CE6CE2 /* Info.plist */,
+				1C2533052354740100CE6CE2 /* MySDK.h */,
+				1C2533062354740100CE6CE2 /* MySDK.m */,
 			);
 			path = FrameworkSDK;
 			sourceTree = "<group>";
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C2532FF2354724700CE6CE2 /* FrameworkSDK.h in Headers */,
+				1C2533072354740100CE6CE2 /* MySDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2533082354740100CE6CE2 /* MySDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -269,6 +278,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = GitHubyangjunyi.FrameworkSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -280,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PGN5857P43;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -292,6 +304,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = GitHubyangjunyi.FrameworkSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
